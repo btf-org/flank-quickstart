@@ -34,4 +34,4 @@ jobs:
           aws-region: us-west-2 # Replace with your AWS region
 
       - name: Upload file to S3
-        run: aws s3 cp google-colab/flank_quickstart_colab.ipynb s3://${{ secrets.AWS_BUCKET }}/google-colab/flank_quickstart_colab.ipynb
+        run: aws s3 cp google-colab/flank_quickstart_colab.ipynb s3://${{ secrets.AWS_BUCKET }}/google-colab/flank_quickstart_colab.ipynb --acl public-read
